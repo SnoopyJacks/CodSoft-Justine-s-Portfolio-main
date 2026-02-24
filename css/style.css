@@ -1,0 +1,198 @@
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color:#333
+}
+
+h1 {
+  color: #d94365;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h2 {
+color: #d94365;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+p {
+  font-size: large;
+  line-height: 1.8;
+  color: #555;
+}
+.text-center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.navbar {
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  padding: 15px 0;
+}
+
+#projects {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+#projects .container {
+  text-align: center;
+  max-width: 1400px;
+}
+
+.project {
+  display: grid;
+  justify-content: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transfrom 0.3s ease-in-out;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project h3 {
+  margin-bottom: 10px;
+  color: #d94365
+}
+.project img {
+  width:100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#about {
+  padding: 80px 20px;
+}
+
+#about h1 {
+  font-size: 40px;
+}
+
+#about img {
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+#contact {
+  padding: 60px 0;
+}
+
+#contact h1 {
+  font-family: 'Playfair Display', serif;
+  color: #d94365;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#contact p{
+  color:#555;
+  font-size: 1.1rem;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form .form-control {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+form button {
+  background-color: #d94365;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #b63251;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+
+footer a {
+  color: #d94365;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #b63251;
+  text-decoration: underline;
+}
+.text-center {
+  text-align: center;
+}
+main {
+  flex: 1;
+}
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 15px;
+  }
+  
+  h3 {
+    font-size: 22px;
+  }
+  .project img {
+    max-width: 100%;
+  }
+}
