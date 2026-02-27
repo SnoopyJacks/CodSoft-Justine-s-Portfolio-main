@@ -56,10 +56,10 @@ img {
 
 /* NAVBAR */
 .navbar-glass {
-  background: rgba(17, 24, 39, 0.85);
+  background: rgba(17, 24, 39, 0.92);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-brand {
@@ -173,6 +173,11 @@ img {
 }
 
 /* PROJECT CARDS */
+#projects .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
 .project-card {
   display: block;
   text-decoration: none;
