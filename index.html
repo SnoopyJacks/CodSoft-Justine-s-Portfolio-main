@@ -267,44 +267,62 @@
         </div>
 
 <!-------------Contact Section----------------->       
-<section id="contact" class="py-5 bg-light" >
-    <div class="container"  style="padding: 40px;">
-      <h2 class="text-center mb-4">Contact Me</h2>
-      <p class="text-center mb-4 text-muted">
+<section id="contact" class="contact-section py-5" >
+    <div class="container contact-container">
+      <div class="text-center mb-4">
+        <h2 class="h4 fw-semibold mb-2">Contact</h2>
+      <p class="text-center mb-0 text-muted">
         I would love to hear from you!! Whether it is about a project, a collaboration or just to say hi!
       </p>
-      <form class="mx-auto p-4 rounded shadow-sm bg-white" style="max-width: 600px">
-        <div class="mb-3">
-      <label for="name" class="form-label"> Name</label>
-      <input type="text"
-      id="name"
-      class="form-control"
-      placeholder="Your Name"
-      required
-      />
-        </div>
-      <div class="mb-3">
-        <label for="email" class="form-label"> Email</label>
-        <input type="email"
-        id="email"
-        class="form-control"
-        placeholder="Your email"
-        required
-        />
-      </div>
-        <div class="mb-3">
-            <label for="message" class="form-label"> Message</label>
+      
+      <form class="contact-form mx-auto">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Your name"
+              required
+            />
+          </div>
+  
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="you@email.com"
+              required
+            />
+          </div>
+  
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
             <textarea
-            id="message"
-            class="form-control"
-            rows="5"
-            placeholder="Your message"
-            required
+              id="message"
+              class="form-control"
+              rows="4"
+              placeholder="How can I help?"
+              required
             ></textarea>
+          </div>
+  
+          <div class="col-12 d-grid">
+            <button type="submit" class="btn btn-accent">
+              Send Message
+            </button>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary w-100"> Send</button>
-    </form>
-    <p class="text-center mb-4 text-muted">If you prefer to email me directly, you can do so at <strong>t.nichole.2807@gmail.com</strong></p>
+      </form>
+  
+      <p class="text-center mt-4 text-muted mb-0">
+        Or email me: <strong class="text-dark">
+          t.nichole.2807@gmail.com
+        </strong>
+      </p>
     </div>
   </section>
 

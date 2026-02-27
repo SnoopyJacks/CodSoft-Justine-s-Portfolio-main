@@ -222,6 +222,53 @@ main { flex: 1; }
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.20);
 }
+.contact-section {
+  background: linear-gradient(180deg, #0b1220, #070b14);
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.contact-container {
+  max-width: 720px;
+}
+
+.contact-section .text-muted {
+  color: rgba(255, 255, 255, 0.68);
+}
+.contact-section .form-label{
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.contact-form {
+  max-width: 560px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+.contact-section .form-control {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.contact-section .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.contact-section .form-control:focus {
+  border-color: rgba(217, 67, 101, 0.65);
+  box-shadow: 0 0 0 3px rgba(217, 67, 101, 0.22);
+}
+
+.contact-section strong.text-light {
+  color: rgba(255, 255, 255, 0.92)
+}
 
 /* Contact form */
 form label {
