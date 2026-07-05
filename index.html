@@ -295,58 +295,79 @@
       <div class="text-center mb-4">
         <h2 class="h4 fw-semibold mb-2">Contact</h2>
       <p class="text-center mb-0 text-muted">
-        I would love to hear from you!! Whether it is about a project, a collaboration or just to say hi!
+        I would love to hear from you!! Whether it is about a project, a collaboration or just to say hi.
       </p>
+      </div>
       
-      <form class="contact-form mx-auto">
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label for="name" class="form-label">Name</label>
-            <input
-              type="text"
-              id="name"
-              class="form-control"
-              placeholder="Your name"
-              required
-            />
-          </div>
-  
-          <div class="col-md-6">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              id="email"
-              class="form-control"
-              placeholder="you@email.com"
-              required
-            />
-          </div>
-  
-          <div class="col-12">
-            <label for="message" class="form-label">Message</label>
-            <textarea
-              id="message"
-              class="form-control"
-              rows="4"
-              placeholder="How can I help?"
-              required
-            ></textarea>
-          </div>
-  
-          <div class="col-12 d-grid">
-            <button type="submit" class="btn btn-accent">
-              Send Message
-            </button>
-          </div>
+      <form
+      name="contact"
+      method="post"
+      netlify-honeypot="bot-field"
+      action="/thank-you.html"
+      class="contact-form mx-auto"
+      >
+
+      <input type="hidden" name="form-name" value="contact" />
+      
+      <p class="d-none">
+        <label>
+          Do not fill this out if you are human:
+          <input name="bot-field" />
+        </label>
+      </p>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input 
+          type="text"
+          id="name"
+          name="name"
+          class="form-control"
+          placeholder="Your name"
+          required
+          />
         </div>
-      </form>
-  
+
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input 
+          type="email"
+          id="email"
+          name="email"
+          class="form-control"
+          placeholder="you@email.com"
+          required
+          />
+        </div>
+
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea 
+          id="message"
+          name="email"
+          class="form-control"
+          rows="4"
+          placeholder="How can I help?"
+          required
+          ></textarea>
+        </div>
+
+        <div class="col-12 d-grid">
+          <button type="submit" class="btn btn-accent">
+            Send Message
+          </button>
+        </div>
+      </div>
+      </form>    
+
       <p class="text-center mt-4 text-muted mb-0">
-        Or email me: <strong class="text-dark">
+        or email me:
+        <strong class="text-dark">
           t.nichole.2807@gmail.com
         </strong>
       </p>
-    </div>
+    </div>  
   </section>
 
 </main>
