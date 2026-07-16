@@ -2,27 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Justine Ziola is a front-end developer in Canada, specializing in responsive web design, JavaScript, 
-    and UX/UI. Explore my portfolio and projects!" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Justine Ziola | Web Developer & UI/UX Enthusiast in Canada</title>
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Justine Ziola is a front-end developer in Canada specializing in responsive web design, JavaScript, accessibility, performance, and UI/UX."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Justine Ziola | Front-End Developer in Canada</title>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
 <body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 <!------------- Navbar Placeholder ----------------------->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top"
+aria-label="Primary navigation">
     <div class="container">
-      <a class="navbar-brand" href="#top">Justine Ziola</a>
+      <a class="navbar-brand" href="#top" aria-label="Justine Ziola, home">Justine Ziola</a>
+
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,13 +51,16 @@
             <a class="nav-link" href="#top">Home</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#featured-project">Featured Project</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -50,43 +73,57 @@
         <div class="container">
             <div class= "row align-items-center g-4">
                 <div class="col-lg-7">
-                    <span class="badge badge-soft mb-3">Front-end Developer • UI/UX</span>
+                    <span class="badge badge-soft mb-3">Front-end Developer <span aria-hidden="true">
+                      • </span>UI/UX</span>
 
                     <h1 class="display-5 fw-bold">
                         Hi, I am <span class="text-gradient">Justine</span> — I build clean, responsive experiences. 
-                  
                       </h1>
-                      <p class="lead text-muted mt-3">
+
+                      <p class="lead mt-3">
                         I am a developer based in Canada focused on modern, user-friendly interfaces, accessibility,
                         and performance.
                       </p>
 
                       <div class="d-flex flex-wrap gap-2 mt-4">
                         <a class="btn btn-accent" href="#projects">View Projects</a>
-                        <a class="btn btn-outline-accent" href="#contact">Contact</a>
+
+                        <a class="btn btn-outline-accent" href="#contact">Contact me</a>
+
                         <a
                             class="btn btn-ghost"
                             href="Justine_Ziola_ATS_Resume.pdf"
                             target="_blank"
                             rel="noopener"
                             rel="noreferrer"
+                            aria-label="Open Jusine Ziola's resume in a new tab"
                             >
                                 Resume
+                                <span class="visually-hidden">(opens in a new tab)</span>
                             </a>
-                        </div>
-                    </div>  
+                          </div> 
 
-                    <div class="hero-meta">
-                        <span>⚡ JavaScript</span>
-                        <span>🎨 UI/UX</span>
-                        <span>📱 Responsive</span>
-                    </div>
+                    <ul class="hero-meta" aria-label="Areas of expertise">
+                      <li>
+                        <span aria-hidden="true">⚡</span> JavaScript
+                      </li>  
+                      <li>
+                        <span aria-hidden="true">🎨</span> UI/UX
+                      </li>  
+                      <li>
+                        <span aria-hidden="true">📱 </span> Responsive design
+                      </li>  
+                     </ul>
                 </div>
 
                 <div class="col-lg-5">
                     <div class="hero-card">
-                        <img src="images/1000005832.jpg" alt="Justine Ziola fun emoji portrait"
+                        <img src="images/1000005832.jpg" alt="Portrait illustration of Justine Ziola"
                         class="hero-image"
+                        width="540"
+                        height="400"
+                        fetchpriority="high"
+                        decoding="async"
                         />
                     </div>
                 </div>
@@ -95,12 +132,12 @@
     </header>
     
 <!------------------------Main/About/------------>    
-    <main>
-        <section id="about" class="section">
+    <main id="main-content">
+        <section id="about" class="section" aria-labelledby="about-heading">
             <div class="container">
                 <div class="section-head">
-                    <h2 class="h1 fw-bold">About</h2>
-                    <p class="text-muted mb-0">
+                    <h2 id="about-heading" class="h1 fw-bold">About</h2>
+                    <p class="mb-0">
                         A quick snapshot of who I am and how I work.
                     </p>
                 </div>
@@ -108,12 +145,12 @@
                 <div class="row g-4">
                     <div class="col-lg-7">
                         <div class="card-glass p-4 h-100">
-                            <p class="text-muted mb-3">
+                            <p>
                                 I am a front-end developer with a passion for turning ideas into polished, accessible, and responsive websites. I enjoy UI/UX design, clean component-driven layouts, and bringing products to life with JavaScript.
                             </p>
 
-                            <p class="text-muted mb-0">
-                                My focus: simple experiences, strong hierarchy, and a modern aesthetic-built with performance in mind.
+                            <p class="mb-0">
+                                My focus is creatinng simple experiences, strong visual hierarchy, and a modern aesthetic built with performance in mind.
                             </p>
                         </div>
                     </div>
@@ -121,15 +158,16 @@
                     <div class="col-lg-5">
                         <div class="card-glass p-4 h-100">
                           <h3 class="h5 fw-semibold mb-3">Skills</h3>
-                          <div class="d-flex flex-wrap gap-2">
-                            <span class="chip">HTML</span>
-                            <span class="chip">CSS</span>
-                            <span class="chip">Bootstrap</span>
-                            <span class="chip">JavaScript</span>
-                            <span class="chip">Responsive Design</span>
-                            <span class="chip">UI/UX</span>
-                            <span class="chip">Git</span>
-                          </div>
+
+                          <ul class="skill-list" aria-label="Technical skills">
+                            <li class="chip">HTML</li>
+                            <li class="chip">CSS</li>
+                            <li class="chip">Bootstrap</li>
+                            <li class="chip">JavaScript</li>
+                            <li class="chip">Responsive Design</li>
+                            <li class="chip">UI/UX</li>
+                            <li class="chip">Git</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -137,181 +175,242 @@
                 </section>
 
 <!-------------------Project ------------------>                
-            <section id="protect"  class="section py-5">
-                <div class="container">
-                    <div class="d-flex justify-content-between gap-3 flex-wrap mb-4"
-                    >
-                    <div>
-                        <h2 class="h1 fw-bold">React Dictionary App</h2>
-                        <p class="text-muted mb-0">
-                            An interactive page I created built with Bootstrap and React. 
-                    </div>    
-                </div>
-                <div class="row align-items-center mb-5">
-                    <div class="col-md-6 text-center">
-                        <img src="images/reactappdictionary.netlify.app_.png" alt="The Calorie Code" class="img-fluid rounded">
-                    </div>
-                    <div class="mt-3 d-flex gap-2 flex-wrap">
-                        <a
-                          class="btn btn-outline-accent btn-sm"
-                          href="https://reactappdictionary.netlify.app/"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          Live Demo
-                        </a>
-                        <a
-                          class="btn btn-ghost btn-sm"
-                          href="https://github.com/SnoopyJacks/react-dictionary"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          GitHub
-                        </a>
-                      </div>
-                </div>
-            </div>
-          <div>  
-        </section>
+<section
+id="featured-project"
+class="section"
+aria-labelledby="featured-project-heading"
+>
+<div class="container">
+  <div class="section-head">
+    <span class="section-eyebrow">Featured project</span>
+    <h2 id="featured-project-heading" class="h1 fw-bold">
+      React Dictionary App
+    </h2>
+    <p class="mb-0">
+      An interactive dictionary application built with React and
+      Bootstrap.
+    </p>
+  </div>
 
-      
-      
-      <!-------------------Project -------------------->
-    
-      <section id="projects" class="section py-5">
-        <div class="container">
-          <div class="pt-5 row align-items-end justify-content-between gap-3 flex-wrap mb-4">
-            <div>
-              <h2 class="h3 fw-semibold mb-1">More Projects</h2>
-            </div>
-          </div>
-      
-          <div class="d-flex flex-column gap-4">
-            <!-- Project 1: photo left, description right -->
-            <article class="card shadow-sm project-card">
-              <div class="row g-0">
-                <div class="col-md-5">
-                  <img
-                    src="images/SaaS.jpg"
-                    alt="Aurora SaaS Landing Page"
-                    class="img-fluid w-100 project-img project-img--cover"
-                  />
-                </div>
-      
-                <div class="col-md-7">
-                  <div class="card-body d-flex flex-column h-100">
-                    <div class="d-flex align-items-start justify-content-between gap-3">
-                      <div>
-                        <h3 class="h5 fw-semibold mb-1">Aurora SaaS</h3>
-                        <p class="text-muted mb-0">HTML | CSS</p>
-                      </div>
-                      <span class="badge text-bg-secondary">Frontend</span>
-                    </div>
-      
-                    <p class="mt-3 text-muted">
-                      Aurora is a responsive SaaS landing page built with HTML and CSS. It includes a mobile-first navigation,
-                      flexible card-based layouts, and an interactive FAQ section. I focused on an accessibility-friendly
-                      structure, strong performance, and consistent behavior across devices and screen sizes.
-                    </p>
-      
-                    <div class="mt-auto d-flex gap-2 flex-wrap">
-                      <a
-                        class="btn btn-accent btn-sm"
-                        href="https://saas-aurora.netlify.app/"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        Live Demo
-                      </a>
-                      <a
-                        class="btn btn-outline-accent btn-sm"
-                        href="https://github.com/SnoopyJacks/SaaS"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        GitHub
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-      
-            <!-- Project 2: underneath, writing under the left photo -->
-            <!-- Project 2: match Project 1 layout (photo left, description right) -->
-<article class="card shadow-sm project-card">
-  <div class="row g-0">
-    <div class="col-md-5">
-      <img
-        src="images/Dashboard.jpg"
-        alt="Admin Dashboard"
-        class="img-fluid w-100 project-img project-img--cover"
-      />
-    </div>
+  <article class="card shadow-sm project-card">
+    <div class="row g-0 align-items-stretch">
+      <div class="col-md-6">
+        <img
+          src="images/reactappdictionary.netlify.app_.png"
+          alt="Dictionary application showing a word definition, phonetics, and related results"
+          class="project-img"
+          width="1200"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
 
-    <div class="col-md-7">
-      <div class="card-body d-flex flex-column h-100">
-        <div class="d-flex align-items-start justify-content-between gap-3">
+      <div class="col-md-6">
+        <div class="card-body d-flex flex-column h-100">
           <div>
-            <h3 class="h5 fw-semibold mb-1">Admin Dashboard</h3>
-            <p class="text-muted mb-0">HTML | CSS</p>
+            <h3 class="h4 fw-semibold">Dictionary search experience</h3>
+
+            <p>
+              Users can search for words and view definitions,
+              pronunciations, examples, and related information in a
+              responsive interface.
+            </p>
           </div>
-          <span class="badge text-bg-secondary">UI</span>
-        </div>
 
-        <p class="mt-3 text-muted">
-          Multipage dashboard UI with a sidebar, responsive and reusable cards and tables.
-        </p>
+          <div class="mt-auto d-flex gap-2 flex-wrap">
+            <a
+              class="btn btn-accent btn-sm"
+              href="https://reactappdictionary.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live demo
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
 
-        <div class="mt-auto d-flex gap-2 flex-wrap">
-          <a
-            class="btn btn-accent btn-sm"
-            href="https://dashboard-ui-jz.netlify.app/"
-            target="_blank"
-            rel="noopener"
-          >
-            Live Demo
-          </a>
-          <a
-            class="btn btn-outline-accent btn-sm"
-            href="https://github.com/SnoopyJacks/dashboard"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </a>
+            <a
+              class="btn btn-outline-accent btn-sm"
+              href="https://github.com/SnoopyJacks/react-dictionary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
+  </article>
+</div>
+</section>
+
+<section
+id="projects"
+class="section"
+aria-labelledby="projects-heading"
+>
+<div class="container">
+  <div class="section-head">
+    <h2 id="projects-heading" class="h1 fw-bold">More projects</h2>
   </div>
-</article>
-    
+
+  <div class="d-flex flex-column gap-4">
+    <article class="card shadow-sm project-card">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img
+            src="images/SaaS.jpg"
+            alt="Aurora SaaS landing page with navigation, feature cards, and call-to-action content"
+            class="project-img"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="col-md-7">
+          <div class="card-body d-flex flex-column h-100">
+            <div
+              class="d-flex align-items-start justify-content-between gap-3"
+            >
+              <div>
+                <h3 class="h5 fw-semibold mb-1">Aurora SaaS</h3>
+                <p class="project-technologies mb-0">HTML and CSS</p>
+              </div>
+
+              <span class="badge text-bg-secondary">Front end</span>
+            </div>
+
+            <p class="mt-3">
+              Aurora is a responsive SaaS landing page built with HTML
+              and CSS. It includes mobile-first navigation, flexible
+              card layouts, and an interactive FAQ section. The project
+              emphasizes accessible structure, performance, and
+              consistent behavior across screen sizes.
+            </p>
+
+            <div class="mt-auto d-flex gap-2 flex-wrap">
+              <a
+                class="btn btn-accent btn-sm"
+                href="https://saas-aurora.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live demo
+                <span class="visually-hidden">(opens in a new tab)</span>
+              </a>
+
+              <a
+                class="btn btn-outline-accent btn-sm"
+                href="https://github.com/SnoopyJacks/SaaS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+                <span class="visually-hidden">(opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card shadow-sm project-card">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img
+            src="images/Dashboard.jpg"
+            alt="Administrative dashboard with sidebar navigation, summary cards, and data tables"
+            class="project-img"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="col-md-7">
+          <div class="card-body d-flex flex-column h-100">
+            <div
+              class="d-flex align-items-start justify-content-between gap-3"
+            >
+              <div>
+                <h3 class="h5 fw-semibold mb-1">Admin Dashboard</h3>
+                <p class="project-technologies mb-0">HTML and CSS</p>
+              </div>
+
+              <span class="badge text-bg-secondary">UI</span>
+            </div>
+
+            <p class="mt-3">
+              A multipage dashboard interface with sidebar navigation,
+              responsive cards, reusable components, and data tables.
+            </p>
+
+            <div class="mt-auto d-flex gap-2 flex-wrap">
+              <a
+                class="btn btn-accent btn-sm"
+                href="https://dashboard-ui-jz.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live demo
+                <span class="visually-hidden">(opens in a new tab)</span>
+              </a>
+
+              <a
+                class="btn btn-outline-accent btn-sm"
+                href="https://github.com/SnoopyJacks/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+                <span class="visually-hidden">(opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
 
 <!-------------Contact Section----------------->       
-<section id="contact" class="contact-section py-5" >
+<section id="contact" class="contact-section" aria-labelledby="contact-heading">
     <div class="container contact-container">
       <div class="text-center mb-4">
-        <h2 class="h4 fw-semibold mb-2">Contact</h2>
-      <p class="text-center mb-0 text-muted">
-        I would love to hear from you!! Whether it is about a project, a collaboration or just to say hi.
+        <h2 id="contact-heading" class="h1 fw-bold mb-2">Contact</h2>
+
+      <p class="mb-0">
+        I would love to hear from you. Get in touch about a project, a collaboration or just to say hi.
       </p>
       </div>
       
       <form
-      name="contact"
-      method="post"
-      netlify-honeypot="bot-field"
-      action="/thank-you.html"
-      class="contact-form mx-auto"
+        name="contact"
+        method="post"
+        action="/thank-you.html"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="contact-form mx-auto"
       >
 
       <input type="hidden" name="form-name" value="contact" />
       
-      <p class="d-none">
-        <label>
-          Do not fill this out if you are human:
-          <input name="bot-field" />
+      <p class="visually-hidden">
+        <label for="bot-field">
+          Do not fill out this field:
         </label>
+        <input
+          id="bot-field"
+          name="bot-field"
+          tabindex="-1"
+          autocomplete="off"
+        />
       </p>
 
       <div class="row g-3">
@@ -330,12 +429,13 @@
         <div class="col-md-6">
           <label for="email" class="form-label">Email</label>
           <input 
-          type="email"
-          id="email"
-          name="email"
-          class="form-control"
-          placeholder="you@email.com"
-          required
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            autocomplete="email"
+            inputmode="email"
+            required
           />
         </div>
 
@@ -345,8 +445,7 @@
           id="message"
           name="email"
           class="form-control"
-          rows="4"
-          placeholder="How can I help?"
+          rows="5"
           required
           ></textarea>
         </div>
@@ -359,23 +458,51 @@
       </div>
       </form>    
 
-      <p class="text-center mt-4 text-muted mb-0">
-        or email me:
-        <strong class="text-dark">
+      <p class="text-center mt-4 mb-0">
+        or email me at 
+        <a href="mailto:t.nichole.2807@gmail.com">
           t.nichole.2807@gmail.com
-        </strong>
+        </a>
       </p>
     </div>  
   </section>
-
 </main>
-  <footer>
-    This portfolio was created and coded by <a href="https://github.com/SnoopyJacks" target="_blank" rel="noopener">Justine Ziola</a>
-    and is open-sourced on <a href="https://github.com/SnoopyJacks/Justine-s-Portfolio" target="_blank" rel="noopener">GitHub</a>
-    and is hosted on <a href="https://justineziolaportfolio.netlify.app" target="_blank" rel="noopener">Netlify.</a>
-  </footer>
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+
+<div class="container">
+  <p class="mb-0">
+    This portfolio was designed and coded by
+    <a
+      href="https://github.com/SnoopyJacks"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Justine Ziola<span class="visually-hidden">
+        on GitHub, opens in a new tab
+      </span>
+    </a>.
+    The source code is available on
+    <a
+      href="https://github.com/SnoopyJacks/Justine-s-Portfolio"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub<span class="visually-hidden">, opens in a new tab</span>
+    </a>
+    and the site is hosted on
+    <a
+      href="https://justineziolaportfolio.netlify.app"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Netlify<span class="visually-hidden">, opens in a new tab</span>
+    </a>.
+  </p>
+</div>
+</footer>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+defer
 ></script>
 </body>
 </html>
